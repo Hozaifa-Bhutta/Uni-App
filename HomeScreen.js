@@ -3,7 +3,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import News from './News';
 import Schedule from './Schedule';
-
+import Tasks from './Tasks'
 
 
 const Tab = createBottomTabNavigator();
@@ -11,14 +11,20 @@ const Tab = createBottomTabNavigator();
 export default function HomeScreen() {
  
     return (
-        <NavigationContainer style = {styles.container}>
-            <Tab.Navigator>
-                <Tab.Screen name = "News" component = {News}/>
-                <Tab.Screen name = "Schedule" component = {Schedule}/>
+        <View
+        style={{
+            flex: 1,
+        }}>
+            <NavigationContainer style = {styles.container}>
+                <Tab.Navigator>
+                    <Tab.Screen name = "News" component = {News}/>
+                    <Tab.Screen name = "Schedule" component = {Schedule}/>
+                    <Tab.Screen name = "Homework" component = {Tasks}/>
 
-            </Tab.Navigator>
-           
-        </NavigationContainer>
+                </Tab.Navigator>
+            
+            </NavigationContainer>
+        </View>
     )
 }
 const styles = StyleSheet.create({

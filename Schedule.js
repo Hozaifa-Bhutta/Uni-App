@@ -2,8 +2,6 @@ import { Dimensions, StyleSheet, View, Text} from 'react-native';
 import {React, useState, useCallback} from 'react';
 import Class from './Class'
 
-//"database"
-const database = {classes: ["Math", "Free Period", "History", "Lunch", "", "Study Hall", "PE"], lengths: [45, 45, 45, 30, 45, 45, 45], passingPeriod: 5, teachers: ["Boca", "", "Leff", "", "", "Wilson", "Luke"]}
 
 
 export default function Schedule(props) {

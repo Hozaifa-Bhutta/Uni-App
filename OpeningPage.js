@@ -11,7 +11,7 @@ export default function App() {
 
     if (loggedIn) {
         return (
-            <View style = {{height: '100%', width: '100%'}}>
+            <View style = {{height: '100%', width: '100%', flex: 1}}>
                 <HomeScreen/>
             </View>
         )
