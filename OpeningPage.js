@@ -6,7 +6,6 @@ import HomeScreen from './HomeScreen';
 
 export default function App() {
     const [newUser, setNewUser] = useState(false)
-    const [text, setText] = useState()
     const [loggedIn, setLoggedIn] = useState(false)
 
     if (loggedIn) {
