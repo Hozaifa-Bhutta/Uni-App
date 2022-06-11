@@ -11,7 +11,7 @@ export default function Login(props) {
     const launchSignUp = () => {
         props.setNewUser(true)
     }
-    // Thing is here
+    
     const onPress = () => {
         if (!(email.includes("@")) && false) {
             Alert.alert(
