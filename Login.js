@@ -40,7 +40,7 @@ export default function Login(props) {
             <View style = {{height: "20%"}}>
                 <Text style = {styles.header}>Email</Text>
                 <TextInput style = {styles.input}
-                placeholder="Enter email"
+                placeholder="Enter email today"
                 onChangeText={newEmail => setEmail(newEmail)}
                 defaultValue={email}
                 /> 
