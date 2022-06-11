@@ -2,6 +2,7 @@ import { Dimensions, View, Text, Button } from 'react-native';
 import { useState, useEffect } from 'react';
 
 
+
 export default function Task(props) {
     const [isCompleted, setIsCompleted] = useState()
     const width = Dimensions.get('window').width
@@ -23,7 +24,7 @@ export default function Task(props) {
                 </Text>
                 <Button title = "Complete" onPress= {() => onPress()}></Button>
                 <View style = {{height: "10%"}}></View>
-
+                
 
             </View>
     } 
