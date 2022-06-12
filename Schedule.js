@@ -1,7 +1,7 @@
 import { Dimensions, StyleSheet, View, Text} from 'react-native';
 import {React, useState, useCallback} from 'react';
 import Class from './Class'
-
+import Slider from '@react-native-community/slider';
 
 
 export default function Schedule(props) {
@@ -26,8 +26,7 @@ export default function Schedule(props) {
     var month = activeDate.getMonth();
 
 
-
-
+    
     return (
         <View style = {styles.container}>
             <Text style={{
@@ -37,7 +36,13 @@ export default function Schedule(props) {
             </Text>
             <Class class = "Math" teacher = "Boca" period = "1" length = {45} hour = {8} minute = {30}/>
             <Class class = "English" teacher = "Moffit" period = "2" length = {45} hour = {9} minute = {20}/>
-
+            <Slider
+                  style={{width: 200, height: 40}}
+  minimumValue={0}
+  maximumValue={1}
+  minimumTrackTintColor="#FFFFFF"
+  maximumTrackTintColor="#000000"
+            />
         </View>
     )
 }
