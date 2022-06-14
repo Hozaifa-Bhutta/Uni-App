@@ -1,4 +1,4 @@
-import { Dimensions, StyleSheet, View, Text} from 'react-native';
+import { Dimensions, Button, StyleSheet, View, Text} from 'react-native';
 import {React, useState, useCallback} from 'react';
 import Class from './Class'
 import Slider from '@react-native-community/slider';
@@ -24,25 +24,22 @@ export default function Schedule(props) {
 
     var year = activeDate.getFullYear();
     var month = activeDate.getMonth();
+    var day = activeDate.getDate();
 
-
-    
+    consts
     return (
         <View style = {styles.container}>
-            <Text style={{
-            fontWeight: 'bold',
-            fontSize: 0.03 * height}}>
-                {months[activeDate.getMonth()]} {activeDate.getFullYear()}
-            </Text>
-            <Class class = "Math" teacher = "Boca" period = "1" length = {45} hour = {8} minute = {30}/>
-            <Class class = "English" teacher = "Moffit" period = "2" length = {45} hour = {9} minute = {20}/>
-            <Slider
-                  style={{width: 200, height: 40}}
-  minimumValue={0}
-  maximumValue={1}
-  minimumTrackTintColor="#FFFFFF"
-  maximumTrackTintColor="#000000"
-            />
+            <Button/>
+            <View style = {{width: "80%", alignItems: "center"}}>
+                <Text style={{
+                fontWeight: 'bold',
+                fontSize: 0.03 * height}}>
+                    {months[month]} {day} {year} 
+                </Text>
+                <Class class = "Math" teacher = "Boca" period = "1" length = {45} hour = {8} minute = {30}/>
+                <Class class = "English" teacher = "Moffit" period = "2" length = {45} hour = {9} minute = {20}/>
+            </View>
+            <Button/>
         </View>
     )
 }
@@ -51,6 +48,8 @@ const styles = StyleSheet.create({
       flex: 1,
       backgroundColor: '#fff',
       alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: "row",
     },
   });
   
