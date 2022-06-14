@@ -6,7 +6,7 @@ const width = Dimensions.get('window').width
 const height = Dimensions.get('window').height
 
 export default function Tasks() {
-    const tasks = [<Task title = "Math HW" description = "Dr. Boca's Webassign #13" />, <Task title = "English HW" description = "Dr. Moffits's Essay" />]
+  const tasks = [<Task title = "Math HW" description = "Dr. Boca's Webassign #13" />, <Task title = "English HW" description = "Dr. Moffits's Essay" />, <Task title = "SS HW" description = "Dr. Gunjan's Diorama" /> ]
     
     
 

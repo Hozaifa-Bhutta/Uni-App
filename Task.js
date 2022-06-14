@@ -1,4 +1,4 @@
-import { Dimensions, View, Text, Button } from 'react-native';
+import { Dimensions, View, Text, Button, TextInput } from 'react-native';
 import { useState, useEffect } from 'react';
 
 
@@ -19,6 +19,8 @@ export default function Task(props) {
                 <Text style = {{fontSize: 0.03 * height}}>
                     {props.title}
                 </Text>
+                <TextInput style={{fontSize: 0.03 * height}}
+                placeholder="Type here to translate!" />
                 <Text style = {{alignSelf: "center",fontSize: 0.02 * height }}>
                     Description: {props.description}
                 </Text>
