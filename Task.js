@@ -14,20 +14,15 @@ export default function Task(props) {
 
 
     if (!isCompleted) {
-        return <View style = {{height: "20%", width: "60%"}}>
+        return <View style = {{alignSelf: "center", height: "20%", width: "60%"}}>
 
-                <Text style = {{fontSize: 0.03 * height}}>
-                    {props.title}
-                </Text>
-                <TextInput style={{fontSize: 0.03 * height}}
-                placeholder="Type here to translate!" />
-                <Text style = {{alignSelf: "center",fontSize: 0.02 * height }}>
-                    Description: {props.description}
-                </Text>
+                <TextInput style={{textAlign: "center", fontSize: 0.03 * height}}
+                placeholder="Math Homework" />
+                <TextInput style={{textAlign: "center", fontSize: 0.02 * height }}
+                placeholder="Lorem" />
                 <Button title = "Complete" onPress= {() => onPress()}></Button>
                 <View style = {{height: "10%"}}></View>
                 
-
             </View>
     } 
     else {
