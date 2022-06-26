@@ -1,3 +1,4 @@
+import React from 'react'
 import { Dimensions, View, Text, Button, TextInput } from 'react-native';
 import { useState, useEffect } from 'react';
 

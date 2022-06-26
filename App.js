@@ -1,10 +1,11 @@
-import { StyleSheet, TextInput, View } from 'react-native';
+import React from 'react'
+import { StyleSheet, TextInput, View, Text } from 'react-native';
 import OpeningPage from "./OpeningPage"
 export default function App() {
   return (
       <View style={styles.container}>
 
-          <OpeningPage></OpeningPage>
+        <OpeningPage></OpeningPage>
         
       </View>
   );

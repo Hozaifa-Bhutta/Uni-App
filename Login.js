@@ -1,3 +1,4 @@
+import React from 'react'
 import { Image, Dimensions, StyleSheet, Text, View, TextInput, Button, Alert } from 'react-native';
 import {useState} from 'react';
 
@@ -87,4 +88,3 @@ const styles = StyleSheet.create({
    
 
   });
-  

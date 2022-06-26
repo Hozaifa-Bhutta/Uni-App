@@ -1,3 +1,5 @@
+import React from 'react'
+
 import { Dimensions, StyleSheet, View, Text} from 'react-native';
 import {useState} from 'react';
 export default function Class(props) {
